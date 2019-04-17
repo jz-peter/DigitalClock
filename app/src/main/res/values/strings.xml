@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DigitalClock</string>
+    <string name="txtViewDate">Date</string>
+    <string name="txtViewAmPm">AM/PM</string>
+
+
+</resources>
