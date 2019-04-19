@@ -3,6 +3,8 @@ package io.turntotech.android.digitalclock;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 import java.text.SimpleDateFormat;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         final TextView txtViewDate = findViewById(R.id.txtViewDate);
         final TextView txtViewAmPm = findViewById(R.id.txtViewAmPm);
@@ -81,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         handler.post(runnableCode);
+    }
+
+    //create settings menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
     }
 
 

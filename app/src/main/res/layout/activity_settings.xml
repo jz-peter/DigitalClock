@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySettings">
+
+    <TextView
+        android:id="@+id/txtViewDisplayColor"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/txtViewDisplayColor"
+        app:layout_constraintBottom_toTopOf="@id/imgViewRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewRed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewOrange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
+        app:srcCompat="@color/colorRed" />
+
+    <ImageView
+        android:id="@+id/imgViewOrange"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
+        app:layout_constraintEnd_toStartOf="@id/imgViewYellow"
+        app:layout_constraintStart_toEndOf="@id/imgViewRed"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
+        app:srcCompat="@color/colorOrange" />
+
+    <ImageView
+        android:id="@+id/imgViewYellow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewGreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgViewOrange"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
+        app:srcCompat="@color/colorYellow" />
+
+    <ImageView
+        android:id="@+id/imgViewGreen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
+        app:layout_constraintEnd_toStartOf="@id/imgViewBlue"
+        app:layout_constraintStart_toEndOf="@id/imgViewYellow"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
+        app:srcCompat="@color/colorGreen" />
+
+    <ImageView
+        android:id="@+id/imgViewBlue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgViewRed"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
+        app:srcCompat="@color/colorBlue" />
+
+    <TextView
+        android:id="@+id/txtViewTimeZone"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/txtViewTimeZone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgViewRed" />
+
+
+</android.support.constraint.ConstraintLayout>
