@@ -22,6 +22,7 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
         app:layout_constraintEnd_toStartOf="@+id/imgViewOrange"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
         app:srcCompat="@color/colorRed" />
@@ -64,7 +65,7 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgViewRed"
+        app:layout_constraintStart_toEndOf="@+id/imgViewGreen"
         app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
         app:srcCompat="@color/colorBlue" />
 
