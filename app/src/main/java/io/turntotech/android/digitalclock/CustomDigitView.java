@@ -1,6 +1,7 @@
 package io.turntotech.android.digitalclock;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
 import android.view.View;
@@ -42,8 +43,7 @@ public class CustomDigitView extends ConstraintLayout {
             viewBottomLeft.setVisibility(VISIBLE);
             viewTopRight.setVisibility(VISIBLE);
             viewBottomRight.setVisibility(VISIBLE);
-        }
-        else if (value == '1') {
+        } else if (value == '1') {
             viewTop.setVisibility(INVISIBLE);
             viewMiddle.setVisibility(INVISIBLE);
             viewBottom.setVisibility(INVISIBLE);
@@ -51,8 +51,7 @@ public class CustomDigitView extends ConstraintLayout {
             viewBottomLeft.setVisibility(INVISIBLE);
             viewTopRight.setVisibility(VISIBLE);
             viewBottomRight.setVisibility(VISIBLE);
-        }
-        else if (value == '2') {
+        } else if (value == '2') {
             viewTop.setVisibility(VISIBLE);
             viewMiddle.setVisibility(VISIBLE);
             viewBottom.setVisibility(VISIBLE);
@@ -60,8 +59,7 @@ public class CustomDigitView extends ConstraintLayout {
             viewBottomLeft.setVisibility(VISIBLE);
             viewTopRight.setVisibility(VISIBLE);
             viewBottomRight.setVisibility(INVISIBLE);
-        }
-        else if (value == '3') {
+        } else if (value == '3') {
             viewTop.setVisibility(VISIBLE);
             viewMiddle.setVisibility(VISIBLE);
             viewBottom.setVisibility(VISIBLE);
@@ -69,8 +67,7 @@ public class CustomDigitView extends ConstraintLayout {
             viewBottomLeft.setVisibility(INVISIBLE);
             viewTopRight.setVisibility(VISIBLE);
             viewBottomRight.setVisibility(VISIBLE);
-        }
-        else if (value == '4') {
+        } else if (value == '4') {
             viewTop.setVisibility(INVISIBLE);
             viewMiddle.setVisibility(VISIBLE);
             viewBottom.setVisibility(INVISIBLE);
@@ -78,8 +75,7 @@ public class CustomDigitView extends ConstraintLayout {
             viewBottomLeft.setVisibility(INVISIBLE);
             viewTopRight.setVisibility(VISIBLE);
             viewBottomRight.setVisibility(VISIBLE);
-        }
-        else if (value == '5') {
+        } else if (value == '5') {
             viewTop.setVisibility(VISIBLE);
             viewMiddle.setVisibility(VISIBLE);
             viewBottom.setVisibility(VISIBLE);
@@ -87,47 +83,50 @@ public class CustomDigitView extends ConstraintLayout {
             viewBottomLeft.setVisibility(INVISIBLE);
             viewTopRight.setVisibility(INVISIBLE);
             viewBottomRight.setVisibility(VISIBLE);
+        } else if (value == '6') {
+            viewTop.setVisibility(VISIBLE);
+            viewMiddle.setVisibility(VISIBLE);
+            viewBottom.setVisibility(VISIBLE);
+            viewTopLeft.setVisibility(VISIBLE);
+            viewBottomLeft.setVisibility(VISIBLE);
+            viewTopRight.setVisibility(INVISIBLE);
+            viewBottomRight.setVisibility(VISIBLE);
+        } else if (value == '7') {
+            viewTop.setVisibility(VISIBLE);
+            viewMiddle.setVisibility(INVISIBLE);
+            viewBottom.setVisibility(INVISIBLE);
+            viewTopLeft.setVisibility(INVISIBLE);
+            viewBottomLeft.setVisibility(INVISIBLE);
+            viewTopRight.setVisibility(VISIBLE);
+            viewBottomRight.setVisibility(VISIBLE);
+        } else if (value == '8') {
+            viewTop.setVisibility(VISIBLE);
+            viewMiddle.setVisibility(VISIBLE);
+            viewBottom.setVisibility(VISIBLE);
+            viewTopLeft.setVisibility(VISIBLE);
+            viewBottomLeft.setVisibility(VISIBLE);
+            viewTopRight.setVisibility(VISIBLE);
+            viewBottomRight.setVisibility(VISIBLE);
+        } else if (value == '9') {
+            viewTop.setVisibility(VISIBLE);
+            viewMiddle.setVisibility(VISIBLE);
+            viewBottom.setVisibility(VISIBLE);
+            viewTopLeft.setVisibility(VISIBLE);
+            viewBottomLeft.setVisibility(INVISIBLE);
+            viewTopRight.setVisibility(VISIBLE);
+            viewBottomRight.setVisibility(VISIBLE);
         }
-        else if (value == '6') {
-             viewTop.setVisibility(VISIBLE);
-             viewMiddle.setVisibility(VISIBLE);
-             viewBottom.setVisibility(VISIBLE);
-             viewTopLeft.setVisibility(VISIBLE);
-             viewBottomLeft.setVisibility(VISIBLE);
-             viewTopRight.setVisibility(INVISIBLE);
-             viewBottomRight.setVisibility(VISIBLE);
-        }
-        else if (value == '7') {
-             viewTop.setVisibility(VISIBLE);
-             viewMiddle.setVisibility(INVISIBLE);
-             viewBottom.setVisibility(INVISIBLE);
-             viewTopLeft.setVisibility(INVISIBLE);
-             viewBottomLeft.setVisibility(INVISIBLE);
-             viewTopRight.setVisibility(VISIBLE);
-             viewBottomRight.setVisibility(VISIBLE);
-        }
-        else if (value == '8') {
-             viewTop.setVisibility(VISIBLE);
-             viewMiddle.setVisibility(VISIBLE);
-             viewBottom.setVisibility(VISIBLE);
-             viewTopLeft.setVisibility(VISIBLE);
-             viewBottomLeft.setVisibility(VISIBLE);
-             viewTopRight.setVisibility(VISIBLE);
-             viewBottomRight.setVisibility(VISIBLE);
-        }
-        else if (value == '9' ) {
-             viewTop.setVisibility(VISIBLE);
-             viewMiddle.setVisibility(VISIBLE);
-             viewBottom.setVisibility(VISIBLE);
-             viewTopLeft.setVisibility(VISIBLE);
-             viewBottomLeft.setVisibility(INVISIBLE);
-             viewTopRight.setVisibility(VISIBLE);
-             viewBottomRight.setVisibility(VISIBLE);
-        }
-
-
-
     }
+        public void setDigitColor ( int colorResourceId){
 
+            viewTop.setBackgroundResource(colorResourceId);
+            viewMiddle.setBackgroundResource(colorResourceId);
+            viewBottom.setBackgroundResource(colorResourceId);
+            viewTopLeft.setBackgroundResource(colorResourceId);
+            viewBottomLeft.setBackgroundResource(colorResourceId);
+            viewTopRight.setBackgroundResource(colorResourceId);
+            viewBottomRight.setBackgroundResource(colorResourceId);
+
+        }
 
 }

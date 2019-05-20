@@ -24,17 +24,23 @@ public class CustomDotsView extends ConstraintLayout {
 
      public void setDots () {
 
-         if (viewTopDot.getVisibility()== VISIBLE) {
+         if (viewTopDot.getVisibility() == VISIBLE) {
              viewTopDot.setVisibility(INVISIBLE);
              viewBottomDot.setVisibility(INVISIBLE);
+         } else {
+             viewTopDot.setVisibility(VISIBLE);
+             viewBottomDot.setVisibility(VISIBLE);
          }
-         else  {
-            viewTopDot.setVisibility(VISIBLE);
-            viewBottomDot.setVisibility(VISIBLE);
-        }
+     }
+         public void setDotsColor ( int colorResourceId){
 
+             viewTopDot.setBackgroundResource(colorResourceId);
+             viewBottomDot.setBackgroundResource(colorResourceId);
+
+
+         }
      }
 
-}
+
 
 

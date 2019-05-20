@@ -9,73 +9,104 @@
     <TextView
         android:id="@+id/txtViewDisplayColor"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
         android:text="@string/txtViewDisplayColor"
-        app:layout_constraintBottom_toTopOf="@id/imgViewRed"
+        app:layout_constraintBottom_toTopOf="@id/btnRed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgViewRed"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_redround"
+        android:onClick="clickRed"
         app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
-        app:layout_constraintEnd_toStartOf="@+id/imgViewOrange"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btnOrange"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
-        app:srcCompat="@color/colorRed" />
+        app:layout_constraintTop_toBottomOf="@+id/txtViewDisplayColor" />
 
-    <ImageView
-        android:id="@+id/imgViewOrange"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/btnOrange"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_orangeround"
+        android:onClick="clickOrange"
         app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
-        app:layout_constraintEnd_toStartOf="@id/imgViewYellow"
-        app:layout_constraintStart_toEndOf="@id/imgViewRed"
-        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
-        app:srcCompat="@color/colorOrange" />
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btnYellow"
+        app:layout_constraintStart_toEndOf="@id/btnRed"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor" />
 
-    <ImageView
-        android:id="@+id/imgViewYellow"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/btnYellow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_yellowround"
+        android:onClick="clickYellow"
         app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
-        app:layout_constraintEnd_toStartOf="@+id/imgViewGreen"
-        app:layout_constraintStart_toEndOf="@+id/imgViewOrange"
-        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
-        app:srcCompat="@color/colorYellow" />
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btnGreen"
+        app:layout_constraintStart_toEndOf="@id/btnOrange"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"/>
 
-    <ImageView
-        android:id="@+id/imgViewGreen"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
-        app:layout_constraintEnd_toStartOf="@id/imgViewBlue"
-        app:layout_constraintStart_toEndOf="@id/imgViewYellow"
-        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
-        app:srcCompat="@color/colorGreen" />
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_greenround"
+        android:onClick="clickGreen"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewTimeZone"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btnBlue"
+        app:layout_constraintStart_toEndOf="@id/btnYellow"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"/>
 
-    <ImageView
-        android:id="@+id/imgViewBlue"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_blueround"
+        android:onClick="clickBlue"
         app:layout_constraintBottom_toTopOf="@id/txtViewTimeZone"
+        android:layout_marginBottom="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgViewGreen"
-        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"
-        app:srcCompat="@color/colorBlue" />
+        app:layout_constraintStart_toEndOf="@id/btnGreen"
+        app:layout_constraintTop_toBottomOf="@id/txtViewDisplayColor"/>
 
     <TextView
         android:id="@+id/txtViewTimeZone"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="20dp"
         android:text="@string/txtViewTimeZone"
+        app:layout_constraintBottom_toTopOf="@id/listViewTimeZone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRed" />
+
+    <ListView
+        android:id="@+id/listViewTimeZone"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@id/switch24hr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtViewTimeZone" />
+
+
+    <Switch
+        android:id="@+id/switch24hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/switch24hr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgViewRed" />
+        app:layout_constraintTop_toBottomOf="@id/listViewTimeZone" />
 
 
 </android.support.constraint.ConstraintLayout>

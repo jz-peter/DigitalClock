@@ -5,7 +5,8 @@
     <string name="menu_settings">Settings</string>
     <string name="txtViewDisplayColor">Display Color</string>
     <string name="txtViewTimeZone">Time Zone</string>
-
+    <string name="listViewTimeZone">City</string>
+    <string name="switch24hr">24 Hour</string>
 
 
 </resources>
